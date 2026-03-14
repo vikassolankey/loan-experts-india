@@ -15,20 +15,11 @@ const TopHeader = () => (
   <div className="bg-finance-blue text-white py-2 px-4 border-b border-white/5">
     <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-xs sm:text-sm">
       <div className="flex items-center gap-4">
-     
-        <span className="text-white/20 hidden sm:inline">|</span>
         <a
-          href="mailto:Arjunyadav@loanexpertindia.com"
+          href="mailto:loanexpertindiaa@gmail.com"
           className="flex items-center gap-2 hover:text-finance-gold transition-colors"
         >
-          <Mail size={14} /> Arjunyadav@loanexpertindia.com
-        </a>
-         <span className="text-white/20 hidden sm:inline">|</span>
-        <a
-          href="mailto:Arjunyadav@loanexpertindia.com"
-          className="flex items-center gap-2 hover:text-finance-gold transition-colors"
-        >
-          <Mail size={14} /> Arjun.loanexperts@gmail.com
+          <Mail size={14} /> loanexpertindiaa@gmail.com
         </a>
 
         <span className="text-white/20 hidden sm:inline">|</span>
@@ -38,7 +29,6 @@ const TopHeader = () => (
         >
           <Phone size={14} /> +91 98765 43210
         </a>
-
       </div>
       <div className="flex items-center gap-4">
         <motion.a

@@ -9,8 +9,10 @@
 }
 
 @layer base {
-  body {
-    @apply bg-slate-50 text-slate-900 font-sans;
+  html, body {
+    @apply bg-slate-50 text-slate-900 font-sans overflow-x-hidden;
+    width: 100%;
+    position: relative;
   }
 }
 
