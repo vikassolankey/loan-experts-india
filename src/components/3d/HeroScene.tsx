@@ -6,7 +6,7 @@ import FloatingSphere from './FloatingSphere';
 
 export default function HeroScene() {
   return (
-    <div className="absolute inset-0 -z-10">
+    <div className="absolute inset-0 z-5 pointer-events-none">
       <Canvas shadows>
         <PerspectiveCamera makeDefault position={[0, 0, 10]} fov={50} />
         <ambientLight intensity={0.5} />

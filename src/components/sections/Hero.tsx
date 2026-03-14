@@ -2,19 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-// HeroScene component removed due to missing module
-// import HeroScene from '../3d/HeroScene';
 import TypingEffect from '../common/TypingEffect';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
-    "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&q=80&w=1920",
-"https://www.propertyfinder.ae/blog/wp-content/uploads/2022/09/shutterstock_1721325934-1.jpg", 
-"https://asaanghar.com/wp-content/uploads/2024/07/Home-Loan-Schemes.jpg",
-"https://tse3.mm.bing.net/th/id/OIP.XOFJb5EH0i4dnldJ2ldB-wAAAA?rs=1&pid=ImgDetMain&o=7&rm=3",
-"https://media.istockphoto.com/id/1319926193/photo/hands-giving-house-model-to-other-hands-with-money-concept-of-real-estate-and-deal.jpg?s=612x612&w=0&k=20&c=vc7ajjESV91jChU-_BKszjd8gE4GP4UUfd9w8OaWr6s=",
+    "https://img.freepik.com/premium-photo/business-people-having-discussion-conference-room-office_107420-8611.jpg",
+    "https://tse4.mm.bing.net/th/id/OIP.yOYW2xGa296vvcqbPlEnPwHaFU?w=572&h=411&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "https://wallpaperaccess.com/full/4106455.jpg",
     "https://static.vecteezy.com/system/resources/thumbnails/006/860/587/small_2x/financial-loan-concept-businessmen-stand-on-money-coin-loan-money-loan-officer-free-photo.JPG",
+    "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1920",
+    "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1920",
   ];
 
   useEffect(() => {
@@ -22,12 +20,12 @@ const Hero = () => {
       setCurrentSlide((prev) => (prev + 1) % images.length);
     }, 4000);
     return () => clearInterval(timer);
-  }, []);
+  }, [images.length]);
 
   return (
-    <section className="relative h-[90vh] flex items-center overflow-hidden">
+    <section className="relative h-[90vh] flex items-center overflow-hidden bg-slate-900">
       {/* Background Slider */}
-      <div className="absolute inset-0 -z-20">
+      <div className="absolute inset-0 z-0">
         {images.map((img, idx) => (
           <motion.div
             key={idx}
@@ -35,14 +33,12 @@ const Hero = () => {
             animate={{ opacity: idx === currentSlide ? 1 : 0 }}
             transition={{ duration: 1.5 }}
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${img})` }}
+            style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("${img}")` }}
           />
         ))}
       </div>
 
-      {/* HeroScene component removed due to missing module */}
-
-      <div className="max-w-7xl mx-auto px-4 w-full">
+      <div className="max-w-7xl mx-auto px-4 w-full relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
