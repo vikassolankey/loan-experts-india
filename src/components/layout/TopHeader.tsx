@@ -7,13 +7,15 @@ import {
   Linkedin,
   Twitter,
   Youtube,
-  Pin,
+  Phone,
 } from "lucide-react";
+import Pinterest from "../common/Pinterest";
 
 const TopHeader = () => (
   <div className="bg-finance-blue text-white py-2 px-4 border-b border-white/5">
     <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-xs sm:text-sm">
       <div className="flex items-center gap-4">
+     
         <span className="text-white/20 hidden sm:inline">|</span>
         <a
           href="mailto:Arjunyadav@loanexpertindia.com"
@@ -21,6 +23,22 @@ const TopHeader = () => (
         >
           <Mail size={14} /> Arjunyadav@loanexpertindia.com
         </a>
+         <span className="text-white/20 hidden sm:inline">|</span>
+        <a
+          href="mailto:Arjunyadav@loanexpertindia.com"
+          className="flex items-center gap-2 hover:text-finance-gold transition-colors"
+        >
+          <Mail size={14} /> Arjun.loanexperts@gmail.com
+        </a>
+
+        <span className="text-white/20 hidden sm:inline">|</span>
+        <a
+          href="tel:+919876543210"
+          className="flex items-center gap-2 hover:text-finance-gold transition-colors"
+        >
+          <Phone size={14} /> +91 98765 43210
+        </a>
+
       </div>
       <div className="flex items-center gap-4">
         <motion.a
@@ -63,7 +81,7 @@ const TopHeader = () => (
           href="#"
           className="hover:text-finance-gold"
         >
-          <Pin size={16} />
+          <Pinterest size={16} />
         </motion.a>
       </div>
     </div>
