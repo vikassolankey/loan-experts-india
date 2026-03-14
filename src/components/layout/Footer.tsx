@@ -3,7 +3,7 @@ import { Facebook, Instagram, Linkedin, Twitter, Youtube, MapPin, Phone, Mail } 
 import Pinterest from '../common/Pinterest';
 
 const Footer = () => (
-  <footer className="bg-finance-blue text-white pt-24 pb-12">
+  <footer className="bg-finance-blue text-white pt-24 pb-12 overflow-hidden">
     <div className="max-w-7xl mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         <div>
@@ -52,7 +52,6 @@ const Footer = () => (
             <li className="flex gap-3">
               <Mail size={18} className="text-finance-gold flex-shrink-0" /> 
               <div className="flex flex-col">
-                <span>loanexpertkndiaa@gmail.com</span>
                 <span>loanexpertindiaa@gmail.com</span>
                 <span>Arjunyadav@loanexpertindia.com</span>
                 <span>Arjun.loanexperts@gmail.com</span>

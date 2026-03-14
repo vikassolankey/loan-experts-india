@@ -13,21 +13,29 @@ import Pinterest from "../common/Pinterest";
 
 const TopHeader = () => (
   <div className="bg-finance-blue text-white py-2 px-4 border-b border-white/5">
-    <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-xs sm:text-sm">
-      <div className="flex items-center gap-4">
+    <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3 text-[10px] sm:text-xs">
+      <div className="flex flex-wrap justify-center sm:justify-start items-center gap-x-4 gap-y-2">
         <a
-          href="mailto:loanexpertindiaa@gmail.com"
-          className="flex items-center gap-2 hover:text-finance-gold transition-colors"
+          href="mailto:Arjunyadav@loanexpertindia.com"
+          className="flex items-center gap-1.5 hover:text-finance-gold transition-colors whitespace-nowrap"
         >
-          <Mail size={14} /> loanexpertindiaa@gmail.com
+          <Mail size={12} /> Arjunyadav@loanexpertindia.com
         </a>
 
-        <span className="text-white/20 hidden sm:inline">|</span>
+        <span className="text-white/20 hidden lg:inline">|</span>
+        <a
+          href="mailto:Arjun.loanexperts@gmail.com"
+          className="flex items-center gap-1.5 hover:text-finance-gold transition-colors whitespace-nowrap"
+        >
+          <Mail size={12} /> Arjun.loanexperts@gmail.com
+        </a>
+
+        <span className="text-white/20 hidden md:inline">|</span>
         <a
           href="tel:+919876543210"
-          className="flex items-center gap-2 hover:text-finance-gold transition-colors"
+          className="flex items-center gap-1.5 hover:text-finance-gold transition-colors whitespace-nowrap"
         >
-          <Phone size={14} /> +91 98765 43210
+          <Phone size={12} /> +91 98765 43210
         </a>
       </div>
       <div className="flex items-center gap-4">
