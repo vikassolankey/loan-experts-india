@@ -130,7 +130,7 @@ const ContactSection = () => {
                   <div className="w-12 h-12 rounded-xl bg-white shadow-md flex items-center justify-center text-finance-blue flex-shrink-0"><Phone /></div>
                   <div>
                     <h4 className="font-bold text-finance-blue mb-1">Call Us</h4>
-                    <p className="text-slate-600 text-sm">+91 98765 43210</p>
+                    <p className="text-slate-600 text-sm">+91 97189 51505</p>
                   </div>
                 </div>
                 <div className="flex gap-4">

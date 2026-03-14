@@ -16,6 +16,7 @@ const BanksPage = lazy(() => import('./pages/BanksPage'));
 const TeamPage = lazy(() => import('./pages/TeamPage'));
 const BlogsPage = lazy(() => import('./pages/BlogsPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
+const CertificatePage = lazy(() => import('./pages/CertificatePage'));
 
 // Loading component
 const PageLoader = () => (
@@ -42,6 +43,7 @@ export default function App() {
                 <Route path="/team" element={<TeamPage />} />
                 <Route path="/blogs" element={<BlogsPage />} />
                 <Route path="/contact" element={<ContactPage />} />
+                <Route path="/certificate" element={<CertificatePage />} />
               </Routes>
             </AnimatePresence>
           </Suspense>

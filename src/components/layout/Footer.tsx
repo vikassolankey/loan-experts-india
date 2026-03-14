@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Linkedin, Twitter, Youtube, MapPin, Phone, Mail } from 'lucide-react';
 import Pinterest from '../common/Pinterest';
 
@@ -37,11 +38,12 @@ const Footer = () => (
         <div>
           <h4 className="font-bold text-lg mb-6 border-b border-white/10 pb-2">Quick Links</h4>
           <ul className="space-y-3 text-slate-300 text-sm">
-            <li className="hover:text-finance-gold cursor-pointer transition-colors">About Us</li>
-            <li className="hover:text-finance-gold cursor-pointer transition-colors">Our Banks</li>
-            <li className="hover:text-finance-gold cursor-pointer transition-colors">Meet Team</li>
-            <li className="hover:text-finance-gold cursor-pointer transition-colors">Blogs</li>
-            <li className="hover:text-finance-gold cursor-pointer transition-colors">Contact Us</li>
+            <li><Link to="/about" className="hover:text-finance-gold transition-colors">About Us</Link></li>
+            <li><Link to="/banks" className="hover:text-finance-gold transition-colors">Our Banks</Link></li>
+            <li><Link to="/team" className="hover:text-finance-gold transition-colors">Meet Team</Link></li>
+            <li><Link to="/blogs" className="hover:text-finance-gold transition-colors">Blogs</Link></li>
+            <li><Link to="/certificate" className="hover:text-finance-gold transition-colors">Our Certificate</Link></li>
+            <li><Link to="/contact" className="hover:text-finance-gold transition-colors">Contact Us</Link></li>
           </ul>
         </div>
         

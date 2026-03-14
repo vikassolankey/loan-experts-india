@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Phone, MessageCircle } from 'lucide-react';
 
 const FloatingButtons = () => {
-  const phoneNumber = "+919876543210";
+  const phoneNumber = "+91 97189 51505";
   const whatsappMessage = encodeURIComponent("Hello! I'm interested in your loan services. Could you please provide more information?");
 
   return (

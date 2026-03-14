@@ -35,8 +35,17 @@ const TopHeader = () => (
           href="tel:+919876543210"
           className="flex items-center gap-1.5 hover:text-finance-gold transition-colors whitespace-nowrap"
         >
-          <Phone size={12} /> +91 98765 43210
+          <Phone size={12} /> +91 97189 51505
         </a>
+        
+        <span className="text-white/20 hidden md:inline">|</span>
+        
+          <span>UDYAM-UP-28-0209621</span>
+        
+       
+        <span className="text-white/20 hidden md:inline">|</span>
+          <span>NCS ID:- E21C69-1517553609939</span>
+        
       </div>
       <div className="flex items-center gap-4">
         <motion.a
